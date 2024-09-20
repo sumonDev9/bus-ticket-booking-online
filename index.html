@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Double Bus - Online Bus Ticket Booking with Dom Manupuletion</title>
+
+    <!-- font: google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- tailwindcss -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primary: '#1DD100',
+                secondary: '#030712',
+                couponOne: '#FFBF0F',
+                couponTwo: '#F78C9C',
+                mobilemenu: '#F7F8F8',
+                buttonColor: 'rgba(29, 209, 0, 0.15);',
+                body: '#03071299',
+              },
+              fontFamily: {
+                Raleway: 'Raleway',
+                Inter: 'Inter',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+    <!-- header start here -->
+
+    <!-- navber start here -->
+    <nav class="w-11/12 mx-auto">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                  <li><a href="#" class="text-lg text-secondary hover:bg-transparent font-medium">Home</a></li>
+                  <li><a href="#" class="text-lg text-secondary hover:bg-transparent font-medium">About</a></li>
+                  <li><a href="#" class="text-lg text-secondary hover:bg-transparent font-medium">Destination</a></li>
+                  <li><a href="#" class="text-lg text-secondary hover:bg-transparent font-medium">Search</a></li>
+                </ul>
+              </div>
+             <a class="text-2xl md:text-4xl font-Raleway font-extrabold text-secondary">P-Ticket</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a href="#" class="text-lg text-secondary hover:bg-transparent font-medium">Home</a></li>
+                <li><a href="#" class="text-lg text-secondary hover:bg-transparent font-medium">About</a></li>
+                <li><a href="#" class="text-lg text-secondary hover:bg-transparent font-medium">Destination</a></li>
+                <li><a href="#" class="text-lg text-secondary hover:bg-transparent font-medium">Search</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end ">
+              <a class="btn text-xl text-primary font-bold">Bus <img src="./images/bus-icon.png" alt=""></a>
+            </div>
+          </div>
+    </nav>
+    <!-- navber here here -->
+
+    <!-- banner start here -->
+       <section class="w-11/12 mx-auto mt-7">
+        <div class="hero h-[500px] rounded-3xl" style="background-image: url(./images/banner.png);">
+         <div class="hero-content text-neutral-content text-center">
+          <div class="max-w-2xl">
+            <h1 class="mb-5 text-3xl md:text-6xl font-bold font-Raleway text-white">End-to-End Travel with <br><span class="text-primary">P Paribahan</span></h1>
+            <p class="mb-5">
+                Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .
+            </p>
+            <button class="px-5 py-3 rounded-xl bg-primary font-Raleway text-xl font-bold text-secondary">Buy Tickets</button>
+          </div>
+        </div>
+      </div>
+       </section>
+    <!-- banner end here -->
+
+    <!-- user & ticket start here --> 
+     <section class="w-11/12 md:w-9/12 mx-auto -mt-12">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+           <!-- user detals start -->
+            <div class="flex p-6 gap-4 bg-white rounded-3xl border-b-4 border-primary">
+                <img src="./images/people.png" alt="">
+                <div>
+                    <h1 class="text-secondary text-3xl font-bold font-Inter">500K+</h1>
+                    <p class="font-Inter text-lg text-secondary opacity-60">Registered users</p>
+                </div>
+            </div>
+             <!-- user detals end -->
+              <!-- Tickets sold start  -->
+              <div class="flex p-6 gap-4 bg-white rounded-3xl border-b-4 border-primary">
+                <img src="./images/people.png" alt="">
+                <div>
+                    <h1 class="text-secondary text-3xl font-bold font-Inter">500K+</h1>
+                    <p class="font-Inter text-lg text-secondary opacity-60">Registered users</p>
+                </div>
+            </div>
+              <!-- Tickets sold end  -->
+            <!-- Rental partners start -->
+            <div class="flex p-6 gap-4 bg-white rounded-3xl border-b-4 border-primary">
+                <img src="./images/people.png" alt="">
+                <div>
+                    <h1 class="text-secondary text-3xl font-bold font-Inter">500K+</h1>
+                    <p class="font-Inter text-lg text-secondary opacity-60">Registered users</p>
+                </div>
+            </div>
+            <!-- Rental partners end -->
+        </div>
+     </section>
+    <!-- user & ticket end here -->
+    <!-- header end here -->
+
+   <!-- main start here -->
+    <main>
+        <!-- Best offers for you start here -->
+         <section class="w-11/12 mx-auto mt-24">
+            <div class="text-center">
+                <h1 class="text-secondary text-4xl font-Raleway font-bold">Best offers for you</h1>
+            </div>
+         </section>
+        <!-- Best offers for you end here -->
+    </main>
+   <!-- main end here -->
+
+    
+</body>
+</html>
